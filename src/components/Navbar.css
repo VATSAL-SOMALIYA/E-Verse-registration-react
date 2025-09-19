@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* space between logo+span, heading, and buttons */
+  align-items: center;
+  padding: 15px 50px;
+  width: 100%;
+  background: transparent;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center; /* vertically center the text with the logo */
+  gap: 10px;           /* space between logo and span */
+  height: 60px;        /* same height as logo width for consistent alignment */
+}
+
+.container {
+  background: rgba(36, 32, 77, 0.8);
+}
+
+.logo {
+  width: 60px;
+  cursor: pointer;
+}
+
+nav span {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff; /* or any color that stands out */
+}
+
+.heading {
+  flex: 1;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btnwrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffffcc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #000; 
+}
+
+.btn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+/* 📱 Mobile screens (≤600px) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .logo-wrapper {
+    justify-content: center;
+  }
+
+  .heading {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .btnwrapper {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* 📲 Tablet screens (601px – 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 10px 30px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .btnwrapper {
+    gap: 12px;
+  }
+}
+/* Wrapper for buttons with hover box */
+.btn-hover-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hover popup box */
+.hover-box {
+  position: absolute;
+  top: 40px; /* below button */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(36, 32, 77, 0.9);
+  color: #fff;
+  padding: 15px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+  z-index: 10;
+  font-size: 0.95rem;
+}
+
+/* Show box on hover */
+.btn-hover-wrapper:hover .hover-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Optional: slightly different width for About box */
+.about-box {
+  width: 350px;
+}
