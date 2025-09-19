@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 import freefireBR from "@/assets/ff-br.jpg";
 import freefireCS from "@/assets/freefire-cs.avif";
-import bgmi from "@/assets/bgmi.avif";
+import bgmi from "@/assets/BGMI.avif";
 import clashRoyale from "@/assets/clashroyale.webp";
 import codm from "@/assets/codm.jpg";
 import wccRivals from "@/assets/wcc.png";
