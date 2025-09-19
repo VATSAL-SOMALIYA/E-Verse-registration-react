@@ -1,12 +1,31 @@
-# React + Vite
+# E-Verse App – Concours'25
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern, responsive React web application built for Concours'25: E-Verse, DAIICT’s official esports tournament. The app provides an interactive interface for participants and spectators, featuring a gaming-inspired UI with dark gradients, neon hover effects, and responsive layouts for all devices.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎮 **Game Cards:** Showcase popular esports titles such as Valorant, BGMI, Free Fire, CODM, EA FC, Clash Royale, and more. Each card includes the game image, title, registration button, and coordinator contact details.
 
-## Expanding the ESLint configuration
+📄 **Rule-book Download:** Users can directly download the tournament rule-book without leaving the page.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📞 **Contact Popup:** Hover over the "Contact" button to reveal organizer details including names, phone numbers, and email.
+
+ℹ️ **About Popup:** Hover over the "About" button to see tournament details, game titles, dates, and venue information.
+
+## Tech Stack
+
+- **React** – Component-based UI for dynamic rendering.
+- **CSS** – Custom styling with hover effects, flexbox, grid layouts, and responsive design.
+- **Vite** – Fast development and optimized build system.
+
+## Purpose
+
+The app was created to enhance participant engagement and provide clear information about DAIICT’s esports tournament. It ensures a seamless user experience with visually appealing designs, easy navigation, and device adaptability.
+
+## Highlights
+
+- Fully responsive layout for laptops, tablets, and mobile devices.
+- Gaming-themed visuals including dark gradients, image overlays, and hover animations.
+- Clean, organized React code structure for maintainability.
+
+This repository serves as a showcase of interactive front-end design for esports events and can be extended for future tournaments or similar competitive gaming applications.
